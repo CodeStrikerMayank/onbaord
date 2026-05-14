@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Nexus | AI/ML Mastery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div id="app">
+        <nav class="glass-nav">
+            <div class="logo">NEURAL <span class="cyan">NEXUS</span></div>
+            <div class="nav-links">
+                <button data-tab="dashboard" class="active">DASHBOARD</button>
+                <button data-tab="roadmap">ROADMAP</button>
+                <button data-tab="pathway">PATHWAY</button>
+                <button data-tab="worksheet">WORKSHEET</button>
+                <button data-tab="offer">OFFER</button>
+                <button data-tab="resources">RESOURCES</button>
+            </div>
+        </nav>
+
+        <main id="content">
+            <!-- Content dynamically injected here -->
+        </main>
+    </div>
+
+    <div class="cursor-glow"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
