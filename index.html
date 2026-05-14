@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neural Nexus | AI/ML Mastery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neural Nexus | AI Mastery Operating System</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +18,12 @@
 </head>
 <body>
     <canvas id="bg-canvas"></canvas>
+    <div class="bg-text">NEXUS</div>
 
     <div id="app">
+        <!-- Desktop Nav -->
         <nav class="glass-nav">
-            <div class="logo">NEURAL <span class="cyan">NEXUS</span></div>
+            <div class="logo" onclick="location.reload()">NEURAL <span class="cyan-text">NEXUS</span></div>
             <div class="nav-links">
                 <button data-tab="dashboard" class="active">DASHBOARD</button>
                 <button data-tab="roadmap">ROADMAP</button>
@@ -31,6 +33,26 @@
                 <button data-tab="resources">RESOURCES</button>
             </div>
         </nav>
+
+        <!-- Mobile Dock -->
+        <div class="mobile-dock">
+            <button data-tab="dashboard" class="active">
+                <i class="ph ph-house"></i>
+                <span>HOME</span>
+            </button>
+            <button data-tab="roadmap">
+                <i class="ph ph-map-trifold"></i>
+                <span>MAP</span>
+            </button>
+            <button data-tab="pathway">
+                <i class="ph ph-chart-line"></i>
+                <span>PATH</span>
+            </button>
+            <button data-tab="resources">
+                <i class="ph ph-database"></i>
+                <span>DATA</span>
+            </button>
+        </div>
 
         <main id="content">
             <!-- Content dynamically injected here -->
